@@ -1,0 +1,9 @@
+# 微信开发者工具临时文件
+node_modules/
+.vscode/
+miniprogram_npm/
+
+# 敏感配置文件（以后加了后端/API时用）
+*.env
+config.js
+db_config.json
