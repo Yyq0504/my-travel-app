@@ -1,0 +1,87 @@
+.design-container {
+  padding: 40rpx 20rpx;
+  background-color: #f5f5f5;
+  min-height: 100vh;
+}
+
+.title {
+  font-size: 36rpx;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  margin-bottom: 40rpx;
+}
+
+.input-group {
+  display: flex;
+  gap: 20rpx;
+  margin-bottom: 40rpx;
+}
+
+.input {
+  flex: 1;
+  height: 80rpx;
+  padding: 0 20rpx;
+  background-color: #fff;
+  border-radius: 40rpx;
+  font-size: 28rpx;
+}
+
+.search-btn {
+  width: 200rpx;
+  height: 80rpx;
+  background-color: #07c160;
+  color: #fff;
+  border: none;
+  border-radius: 40rpx;
+  font-size: 28rpx;
+}
+
+.hot-key {
+  margin-bottom: 60rpx;
+}
+
+.hot-title {
+  font-size: 28rpx;
+  color: #666;
+  margin-bottom: 20rpx;
+}
+
+.key-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16rpx;
+}
+
+.key-item {
+  padding: 12rpx 24rpx;
+  background-color: #fff;
+  border-radius: 50rpx;
+  font-size: 26rpx;
+  color: #333;
+}
+
+.func-btn-group {
+  display: flex;
+  flex-direction: column;
+  gap: 20rpx;
+  padding: 0 20rpx;
+}
+
+.func-btn {
+  height: 80rpx;
+  line-height: 80rpx;
+  border-radius: 40rpx;
+  font-size: 28rpx;
+  border: none;
+}
+
+.func-btn:not(.lottery) {
+  background-color: #07c160;
+  color: #fff;
+}
+
+.func-btn.lottery {
+  background-color: #ff6700;
+  color: #fff;
+}

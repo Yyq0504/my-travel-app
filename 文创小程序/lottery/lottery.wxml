@@ -1,0 +1,27 @@
+<view class="page">
+  <!-- 标题区域 -->
+  <view class="title">文创盲盒 · 随机抽取</view>
+  <view class="sub">抽取其他用户的优秀作品参考</view>
+
+  <!-- 转盘区域 -->
+  <view class="wheel-box">
+    <!-- 转盘图片（修复transform语法） -->
+    <image 
+      src="/images/wheel.png" 
+      class="wheel" 
+      style="transform: rotate({{rotate}}deg); transition: transform 3s ease-out;"
+    ></image>
+    <!-- 抽奖指针 -->
+    <view class="pointer" bindtap="startLottery">抽</view>
+  </view>
+
+  <!-- 结果展示区域 -->
+  <view class="result" wx:if="{{result}}">
+    <view class="res-title">抽到作品：{{result.title}}</view>
+    <image src="{{result.pic}}" class="res-img"></image>
+    <view class="res-desc">{{result.desc}}</view>
+  </view>
+
+  <!-- 跳转按钮 -->
+  <button style="margin-top:40rpx" bindtap="goDesign">去创作设计</button>
+</view>

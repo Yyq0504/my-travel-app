@@ -1,0 +1,31 @@
+<view class="design-container">
+  <!-- 标题 -->
+  <view class="title">文创设计素材助手</view>
+
+  <!-- 关键词输入 -->
+  <view class="input-group">
+    <input 
+      class="input" 
+      placeholder="输入关键词生成文创素材（如：苏州、国潮）" 
+      value="{{keyword}}" 
+      bindinput="setKeyword"
+    />
+    <button class="search-btn" bindtap="getMaterial">生成素材</button>
+  </view>
+
+  <!-- 热门关键词 -->
+  <view class="hot-key">
+    <view class="hot-title">热门关键词</view>
+    <view class="key-list">
+      <view class="key-item" wx:for="{{hotKeywords}}" wx:key="index" bindtap="chooseHotKey" data-key="{{item}}">
+        {{item}}
+      </view>
+    </view>
+  </view>
+
+  <!-- 功能按钮 -->
+  <view class="func-btn-group">
+    <button class="func-btn" bindtap="goSubmit">提交我的文创作品</button>
+    <button class="func-btn lottery" bindtap="goLottery">抽盲盒文创作品</button>
+  </view>
+</view>

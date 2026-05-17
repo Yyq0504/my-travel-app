@@ -1,0 +1,23 @@
+<view class="material-container">
+  <!-- 关键词标题 -->
+  <view class="keyword-tag">{{keyword}} 文创素材参考</view>
+
+  <!-- 素材标题&描述 -->
+  <view class="material-info">
+    <view class="title">{{title}}</view>
+    <view class="desc">{{desc}}</view>
+  </view>
+
+  <!-- 素材图片展示 -->
+  <view class="img-list">
+    <view class="img-item" wx:for="{{imgs}}" wx:key="index" bindtap="previewImg" data-src="{{item}}">
+      <image src="{{item}}" mode="widthFix" lazy-load />
+    </view>
+  </view>
+
+  <!-- 操作按钮 -->
+  <view class="btn-group">
+    <button class="btn submit" bindtap="goSubmit">提交我的文创作品</button>
+    <button class="btn lottery" bindtap="goLottery">抽盲盒文创作品</button>
+  </view>
+</view>

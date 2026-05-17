@@ -1,0 +1,13 @@
+page{background:#f7f8fa;}
+.page{padding:40rpx 32rpx;text-align:center;}
+.title{font-size:42rpx;font-weight:600;margin-bottom:12rpx;}
+.sub{font-size:26rpx;color:#888;margin-bottom:60rpx;}
+
+.wheel-box{position:relative;width:480rpx;height:480rpx;margin:0 auto;}
+.wheel{width:100%;height:100%;transition:transform 3s ease-out;}
+.pointer{position:absolute;top:50%;left:50%;width:100rpx;height:100rpx;background:#5c6fff;color:#fff;border-radius:50rpx;transform:translate(-50%,-50%);display:flex;align-items:center;justify-content:center;font-size:32rpx;font-weight:bold;}
+
+.result{margin-top:60rpx;background:#fff;border-radius:20rpx;padding:32rpx;}
+.res-title{font-size:32rpx;font-weight:500;margin-bottom:16rpx;}
+.res-img{width:360rpx;height:360rpx;border-radius:16rpx;margin:0 auto;}
+.res-desc{margin-top:16rpx;font-size:26rpx;color:#666;}

@@ -1,0 +1,18 @@
+{
+  "pages": [
+    "design/design",
+    "material/material",
+    "submit/submit",
+    "lottery/lottery"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "文创小程序",
+    "navigationBarTextStyle": "black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "usingComponents": {},
+  "lazyCodeLoading": "requiredComponents"
+}

@@ -1,0 +1,25 @@
+<view class="page">
+  <view class="title">上传你的文创作品</view>
+  <view class="desc">支持贴纸、插画、海报、包装设计等</view>
+
+  <view class="upload-section">
+    <view class="upload-box" bindtap="chooseImage">
+      <block wx:if="{{imgUrl}}">
+        <image src="{{imgUrl}}" mode="aspectFill" class="preview"></image>
+      </block>
+      <block wx:else>
+        <view class="placeholder">+ 点击上传作品图</view>
+      </block>
+    </view>
+  </view>
+
+  <view class="form-item">
+    <input placeholder="作品名称" bindinput="setName" value="{{name}}" />
+  </view>
+
+  <view class="form-item">
+    <textarea placeholder="简单描述（风格/元素/灵感）" bindinput="setDesc" value="{{desc}}"></textarea>
+  </view>
+
+  <button class="submit-btn" bindtap="submitWork">提交作品</button>
+</view>
